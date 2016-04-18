@@ -62,7 +62,7 @@ The following table provides the name of the "manifest" file where you specify d
 
  Configuration | [bower][bower] | [component][component] | [jam][jam]              | [volo][volo]            | [npm][npm]              | [spm][spm]
 :--------------|:---------------|:-----------------------|:------------------------|:------------------------|:------------------------|:-----
- `filename`    | bower.json     | component.json         | [package.json][package] | [package.json][package] | [package.json][package] | [package.json][package] 
+ `filename`    | [bower.json][bower-spec]     | [component.json][component-spec]         | [package.json][package] | [package.json][package] | [package.json][package] | [package.json][package] 
 
 Sample *[bower][bower]* enabled `bower.json` file:
 
@@ -314,7 +314,6 @@ The following table details which tools expose a central "registry".
 
 **NOTES**:
 
--  The *[bower][bower]* "registry" is only a convenient [shorturl service](https://github.com/bower/bower/issues/10#issuecomment-8547463).
 -  It is good etiquette to use [user/package namespacing][packagist] when registering a package (except in npm)
 
 
@@ -469,6 +468,7 @@ Complementary Resources
 
 Below is a list of resources that will likely be useful to you if you found this comparison useful:
 
+-   [JavaScript Modules: A Beginner’s Guide](https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.fmjrjz3tz)
 -   [Package Managers: An Introductory Guide For The Uninitiated Front-End Developer](http://tech.pro/tutorial/1190/package-managers-an-introductory-guide-for-the-uninitiated-front-end-developer)
 -   [Browser field spec for package.json](https://gist.github.com/shtylman/4339901)
 -   [Landscaping With Front-end Tools](https://github.com/codylindley/frontend-tools)
@@ -494,7 +494,7 @@ Symbols Used
 
 
 [bower]:         http://bower.io
-[component]:     https://github.com/component/component
+[component]:     https://github.com/componentjs/component
 [jam]:           http://jamjs.org
 [volo]:          http://volojs.org
 [npm]:           https://npmjs.org/
@@ -507,11 +507,13 @@ Symbols Used
 [make]:          http://www.gnu.org/software/make/
 [grunt]:         http://gruntjs.com/
 [bi18]:          https://github.com/bower/bower/issues/18
-[package]:       http://package.json.jit.su
+[package]:       http://browsenpm.org/package.json
 [bowerrc]:       https://github.com/bower/bower#configuration
+[bower-spec]:    https://github.com/bower/bower.json-spec
+[component-spec]:https://github.com/componentjs/spec/blob/master/component.json/specifications.md
 
-[bower-reg]:     http://sindresorhus.com/bower-components
-[component-reg]: http://component.io
+[bower-reg]:     http://bower.io/search
+[component-reg]: http://component.github.io
 [jam-reg]:       http://jamjs.org/packages
 
 [@wilmoore]:     http://twitter.com/wilmoore
